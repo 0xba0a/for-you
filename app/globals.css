@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+html {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 0;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 0;
+}
+
+.outer::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #cfcfcf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5a5a5
+}
+
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+.slider:hover {
+  filter: invert(20%) sepia(96%) saturate(6863%) hue-rotate(265deg) brightness(81%) contrast(130%);
+  transition: ease-in-out;
+  transition-delay: 75ms;
+  transition-duration: 300ms;
+}
+
+.purple {
+    filter: invert(12%) sepia(90%) saturate(6620%) hue-rotate(267deg) brightness(82%) contrast(126%);
+}
+
+.black {
+  filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(340deg) brightness(94%) contrast(106%);
+}
+
+input:focus, textarea:focus {
+  outline: none
+}
